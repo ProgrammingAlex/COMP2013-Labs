@@ -10,8 +10,8 @@ export default function LocationCard({
     return <div className="LocationCard">
         <img src={pic} alt="" width="100px" />
         <h2>{country}</h2>
-        <p>{location}</p>
-        <p>`{rating} ★`</p>
-        <p>`{price}/night`</p>
+        <p className="locationName">{location}</p>
+        <p style={{color:rating < 4 ? "red" : "green"}}>{rating} ★</p>
+        <p className="price">{price}/night</p>
     </div>
 }

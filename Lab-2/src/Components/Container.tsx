@@ -4,6 +4,9 @@ import listings from "../data/data";
 export default function LocationContainer()
 {
     return(<div className="Container">
-        <LocationCard{...listings[0]}/>
-    </div>)
+   {listings.map((resort) => (
+        <LocationCard key={resort.id} {...resort} />
+      ))}
+    </div>
+  );
 }

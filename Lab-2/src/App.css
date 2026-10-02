@@ -1,0 +1,25 @@
+body {
+  font-family: "Segoe UI";
+  background-color: rgb(13, 15, 19);
+  margin: 0;
+}
+
+h1{
+  color: white;
+  text-align: center
+}
+
+.Container{
+  display: flex;
+  justify-content: center;
+  margin: 40px
+}
+
+.locationName{
+  color: rgb(150, 150, 150);
+  font: italic;
+}
+
+.price{
+  color: rgb(140, 140, 140);
+}
